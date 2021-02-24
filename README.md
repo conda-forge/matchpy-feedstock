@@ -5,11 +5,13 @@ Home: https://github.com/HPAC/matchpy
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/matchpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: MatchPy is a pattern matching library for Python.
 
+Development: https://github.com/HPAC/matchpy
 
+Documentation: https://matchpy.readthedocs.io/
 
 Current build status
 ====================
