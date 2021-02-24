@@ -22,7 +22,6 @@ requirements:
     - pytest-runner
   run:
     - python >=3.6
-    - hopcroftkarp >=1.2,<2.0
     - multiset >=2.0,<3.0
 
 test:
@@ -42,4 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - asmeurer
-    - henrik227
+    - hbarthels
