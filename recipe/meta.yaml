@@ -1,5 +1,5 @@
 {% set name = "matchpy" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a21d7a1e3de417b6d0b865c63958e09230e24bf104c31b754360a09bb7bcf5be
+  sha256: 5788f5ad901e925ef90b9b4baa1fbe1f2c5822b9f631fd5de1ffb58ab4298231
 
 build:
   number: 0
