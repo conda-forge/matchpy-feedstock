@@ -6,25 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 5788f5ad901e925ef90b9b4baa1fbe1f2c5822b9f631fd5de1ffb58ab4298231
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools_scm >=1.7.0
     - pytest-runner
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - multiset >=2.0,<3.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - matchpy
 
